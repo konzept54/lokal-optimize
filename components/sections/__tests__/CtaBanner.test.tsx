@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 import CtaBanner from '../CtaBanner'
 
 const mockPush = vi.fn()
-vi.mocked(useRouter).mockReturnValue({ push: mockPush } as ReturnType<typeof useRouter>)
+vi.mocked(useRouter).mockReturnValue({ push: mockPush } as unknown as ReturnType<typeof useRouter>)
 
 describe('CtaBanner', () => {
   beforeEach(() => mockPush.mockClear())
