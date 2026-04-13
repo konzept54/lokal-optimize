@@ -6,9 +6,11 @@ import React from 'react'
 // Framer Motion — animate instantly in tests, no real animations
 vi.mock('framer-motion', () => ({
   motion: new Proxy({}, {
-    get: (_target, tag: string) =>
-      ({ children, ...props }: React.HTMLAttributes<HTMLElement> & { children?: React.ReactNode }) =>
-        React.createElement(tag, props, children),
+    get: (_target, tag) => {
+      if (typeof tag !== 'string') return undefined
+      return ({ children, ...props }: React.HTMLAttributes<HTMLElement> & { children?: React.ReactNode }) =>
+        React.createElement(tag, props, children)
+    },
   }),
   useInView: () => true,
   animate: vi.fn((_from: number, _to: number, options?: { onUpdate?: (v: number) => void }) => {
@@ -25,6 +27,7 @@ vi.mock('next/script', () => ({
 vi.mock('next/navigation', () => ({
   useRouter: () => ({ push: vi.fn() }),
   usePathname: () => '/',
+  useSearchParams: () => new URLSearchParams(),
 }))
 
 vi.mock('next/image', () => ({
