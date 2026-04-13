@@ -25,7 +25,7 @@ vi.mock('next/script', () => ({
 }))
 
 vi.mock('next/navigation', () => ({
-  useRouter: () => ({ push: vi.fn() }),
+  useRouter: vi.fn(() => ({ push: vi.fn() })),
   usePathname: () => '/',
   useSearchParams: () => new URLSearchParams(),
 }))
