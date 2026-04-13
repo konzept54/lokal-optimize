@@ -69,6 +69,8 @@ export default function Navigation() {
           className="md:hidden text-brand-cyan p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menü öffnen"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-drawer"
         >
           {mobileOpen ? '✕' : '☰'}
         </button>
@@ -76,7 +78,7 @@ export default function Navigation() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="md:hidden bg-brand-surface border-t border-brand-teal/30 px-6 py-4 flex flex-col gap-4">
+        <div id="mobile-drawer" className="md:hidden bg-brand-surface border-t border-brand-teal/30 px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
