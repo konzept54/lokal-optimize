@@ -6,6 +6,7 @@ import Image from 'next/image'
 
 const navLinks = [
   { label: 'Leistungen', href: '/#leistungen' },
+  { label: 'KI Consulting', href: '/#ki-consulting' },
   { label: 'Über uns', href: '/#ueber-uns' },
   { label: 'Referenzen', href: '/#referenzen' },
 ]

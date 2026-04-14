@@ -20,6 +20,7 @@ const serviceTags = [
   'Analytics',
   'Social Media',
   'Inbound Marketing',
+  'KI Consulting',
 ]
 
 export default function Hero() {

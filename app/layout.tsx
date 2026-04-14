@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | Local Optimize',
   },
   description:
-    'Ihr Google-Spezialist für SEO, Google Ads, Social Media und Webanalyse. Über 250 zufriedene Kunden, 10+ Jahre Erfahrung. Jetzt kostenlose Website-Analyse starten.',
+    'Ihr Google-Spezialist für SEO, Google Ads, Social Media, Webanalyse und KI Consulting. Über 250 zufriedene Kunden, 10+ Jahre Erfahrung. Jetzt kostenlose Website-Analyse starten.',
   metadataBase: new URL('https://localoptimize.de'),
   alternates: {
     canonical: 'https://localoptimize.de',
@@ -82,6 +82,11 @@ const jsonLd = {
         'Display Advertising',
         'Remarketing',
         'Inbound Marketing',
+        'KI Consulting',
+        'Künstliche Intelligenz',
+        'Prozessautomatisierung',
+        'KI-Strategie',
+        'Chatbot-Entwicklung',
       ],
       priceRange: '$$',
       aggregateRating: {
