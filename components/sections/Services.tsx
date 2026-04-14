@@ -57,7 +57,7 @@ export default function Services() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section className="py-20 px-6 bg-brand-dark">
+    <section id="leistungen" className="py-20 px-6 bg-brand-dark">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <span className="inline-block text-xs font-bold tracking-widest uppercase text-brand-cyan border border-brand-cyan/30 bg-brand-surface px-3 py-1 rounded mb-4">

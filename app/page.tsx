@@ -4,7 +4,9 @@ import Hero from '@/components/sections/Hero'
 import Stats from '@/components/sections/Stats'
 import Services from '@/components/sections/Services'
 import Process from '@/components/sections/Process'
-import CtaBanner from '@/components/sections/CtaBanner'
+import Referenzen from '@/components/sections/Referenzen'
+import UeberUns from '@/components/sections/UeberUns'
+import Kontakt from '@/components/sections/Kontakt'
 
 export default function HomePage() {
   return (
@@ -15,7 +17,9 @@ export default function HomePage() {
         <Stats />
         <Services />
         <Process />
-        <CtaBanner />
+        <Referenzen />
+        <UeberUns />
+        <Kontakt />
       </main>
       <Footer />
     </>

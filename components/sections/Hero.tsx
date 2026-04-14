@@ -1,7 +1,6 @@
 // components/sections/Hero.tsx
 'use client'
 
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 const container = {
@@ -76,18 +75,18 @@ export default function Hero() {
           variants={item}
           className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10"
         >
-          <Link
-            href="/kontakt"
+          <a
+            href="#kontakt"
             className="bg-brand-orange text-white font-bold px-6 py-3 rounded text-sm hover:bg-brand-orange/90 transition-colors"
           >
             Kostenlose Website-Analyse starten →
-          </Link>
-          <Link
-            href="/leistungen"
+          </a>
+          <a
+            href="#leistungen"
             className="border border-brand-cyan/30 text-brand-cyan text-sm px-5 py-3 rounded hover:border-brand-cyan/60 transition-colors"
           >
             Leistungen ansehen
-          </Link>
+          </a>
         </motion.div>
 
         <motion.div variants={item} className="flex flex-wrap justify-center gap-2">

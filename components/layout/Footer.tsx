@@ -5,7 +5,7 @@ import Image from 'next/image'
 const legalLinks = [
   { label: 'Impressum', href: '/impressum' },
   { label: 'Datenschutz', href: '/datenschutz' },
-  { label: 'Kontakt', href: '/kontakt' },
+  { label: 'Kontakt', href: '#kontakt' },
 ]
 
 export default function Footer() {

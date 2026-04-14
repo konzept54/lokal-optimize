@@ -5,10 +5,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const navLinks = [
-  { label: 'Leistungen', href: '/leistungen' },
-  { label: 'Über uns', href: '/ueber-uns' },
-  { label: 'Referenzen', href: '/referenzen' },
-  { label: 'Blog', href: '#' },
+  { label: 'Leistungen', href: '/#leistungen' },
+  { label: 'Über uns', href: '/#ueber-uns' },
+  { label: 'Referenzen', href: '/#referenzen' },
 ]
 
 export default function Navigation() {
@@ -56,12 +55,12 @@ export default function Navigation() {
           >
             +49 7844 918 32 72
           </a>
-          <Link
-            href="/kontakt"
+          <a
+            href="/#kontakt"
             className="bg-brand-orange text-white text-sm font-bold px-4 py-2 rounded hover:bg-brand-orange/90 transition-colors"
           >
             Kostenlose Analyse
-          </Link>
+          </a>
         </div>
 
         {/* Mobile hamburger */}
@@ -92,13 +91,13 @@ export default function Navigation() {
           <a href="tel:+4978449183272" className="text-brand-cyan/70 text-sm">
             +49 7844 918 32 72
           </a>
-          <Link
-            href="/kontakt"
+          <a
+            href="/#kontakt"
             className="bg-brand-orange text-white text-sm font-bold px-4 py-2 rounded text-center"
             onClick={() => setMobileOpen(false)}
           >
             Kostenlose Analyse
-          </Link>
+          </a>
         </div>
       )}
     </header>
