@@ -1,5 +1,7 @@
-import { redirect } from 'next/navigation'
+'use client'
+import { useEffect } from 'react'
 
 export default function KontaktPage() {
-  redirect('/#kontakt')
+  useEffect(() => { window.location.replace('/#kontakt') }, [])
+  return null
 }

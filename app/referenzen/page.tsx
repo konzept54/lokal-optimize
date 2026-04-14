@@ -1,5 +1,7 @@
-import { redirect } from 'next/navigation'
+'use client'
+import { useEffect } from 'react'
 
 export default function ReferenzenPage() {
-  redirect('/#referenzen')
+  useEffect(() => { window.location.replace('/#referenzen') }, [])
+  return null
 }

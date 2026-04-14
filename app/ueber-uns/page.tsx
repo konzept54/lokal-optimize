@@ -1,5 +1,7 @@
-import { redirect } from 'next/navigation'
+'use client'
+import { useEffect } from 'react'
 
 export default function UeberUnsPage() {
-  redirect('/#ueber-uns')
+  useEffect(() => { window.location.replace('/#ueber-uns') }, [])
+  return null
 }

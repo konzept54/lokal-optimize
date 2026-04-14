@@ -1,5 +1,7 @@
-import { redirect } from 'next/navigation'
+'use client'
+import { useEffect } from 'react'
 
 export default function LeistungenPage() {
-  redirect('/#leistungen')
+  useEffect(() => { window.location.replace('/#leistungen') }, [])
+  return null
 }

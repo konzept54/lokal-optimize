@@ -33,12 +33,14 @@ export const metadata: Metadata = {
     title: 'Local Optimize – Mehr Umsatz durch messbaren Google Traffic',
     description:
       'Ihr Google-Spezialist für SEO, Google Ads, Social Media und Webanalyse. Über 250 zufriedene Kunden, 10+ Jahre Erfahrung.',
+    images: [{ url: '/logo.svg', width: 512, height: 146, alt: 'Local Optimize' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Local Optimize – Mehr Umsatz durch messbaren Google Traffic',
     description:
       'Ihr Google-Spezialist für SEO, Google Ads, Social Media und Webanalyse. Über 250 zufriedene Kunden, 10+ Jahre Erfahrung.',
+    images: ['/logo.svg'],
   },
   robots: {
     index: true,
