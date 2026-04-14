@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Navigation from '@/components/layout/Navigation'
 import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
@@ -7,6 +8,17 @@ import Process from '@/components/sections/Process'
 import Referenzen from '@/components/sections/Referenzen'
 import UeberUns from '@/components/sections/UeberUns'
 import Kontakt from '@/components/sections/Kontakt'
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Local Optimize – Mehr Umsatz durch messbaren Google Traffic',
+  },
+  description:
+    'Ihr Google-Spezialist für SEO, Google Ads, Social Media und Webanalyse. Über 250 zufriedene Kunden, 10+ Jahre Erfahrung. Jetzt kostenlose Website-Analyse starten.',
+  alternates: {
+    canonical: 'https://localoptimize.de',
+  },
+}
 
 export default function HomePage() {
   return (
